@@ -2,9 +2,6 @@ package com.learnxiny.models;
 
 import java.util.Map;
 
-/**
- * Created by spandhare on 3/3/16.
- */
 public class Trainer {
 
     String id;

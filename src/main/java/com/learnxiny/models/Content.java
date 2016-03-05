@@ -2,9 +2,6 @@ package com.learnxiny.models;
 
 import java.util.List;
 
-/**
- * Created by spandhare on 3/1/16.
- */
 public class Content {
     String title;
     String numberOfWeeks;

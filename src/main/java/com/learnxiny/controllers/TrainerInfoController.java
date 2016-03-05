@@ -9,10 +9,6 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.HashMap;
 import java.util.Map;
 
-/**
- * Created by spandhare on 3/3/16.
- */
-
 @RestController
 @RequestMapping("/trainers")
 public class TrainerInfoController {

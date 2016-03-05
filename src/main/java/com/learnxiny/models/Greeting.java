@@ -1,8 +1,5 @@
 package com.learnxiny.models;
 
-/**
- * Created by spandhare on 3/1/16.
- */
 public class Greeting {
     private final long id;
     private final String content;
