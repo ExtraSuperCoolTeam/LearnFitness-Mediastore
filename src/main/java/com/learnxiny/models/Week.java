@@ -6,10 +6,12 @@ public class Week {
     String weekNumber;
     String photoUrl;
     String videoUrl;
+    String videoId;
     String shortDescription;
     String longDescription;
 
-    public Week(String weekTitle, String weekNumber, String photoUrl, String videoUrl, String shortDescription, String longDescription) {
+    public Week(String weekTitle, String weekNumber, String photoUrl, String videoUrl, String videoId,
+                String shortDescription, String longDescription) {
         this.weekTitle = weekTitle;
         this.weekNumber = weekNumber;
         this.photoUrl = photoUrl;
@@ -64,5 +66,13 @@ public class Week {
 
     public void setLongDescription(String longDescription) {
         this.longDescription = longDescription;
+    }
+
+    public String getVideoId() {
+        return videoId;
+    }
+
+    public void setVideoId(String videoId) {
+        this.videoId = videoId;
     }
 }
