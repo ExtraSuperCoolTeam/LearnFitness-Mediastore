@@ -1,5 +1,7 @@
 package com.learnxiny.models;
 
+import java.util.List;
+
 public class Week {
 
     String weekTitle;
@@ -10,14 +12,17 @@ public class Week {
     String shortDescription;
     String longDescription;
 
+    List<Step> steps;
+
     public Week(String weekTitle, String weekNumber, String photoUrl, String videoUrl, String videoId,
-                String shortDescription, String longDescription) {
+                String shortDescription, String longDescription, List<Step> steps) {
         this.weekTitle = weekTitle;
         this.weekNumber = weekNumber;
         this.photoUrl = photoUrl;
         this.videoUrl = videoUrl;
         this.shortDescription = shortDescription;
         this.longDescription = longDescription;
+        this.steps = steps;
     }
 
     public String getWeekTitle() {
@@ -74,5 +79,13 @@ public class Week {
 
     public void setVideoId(String videoId) {
         this.videoId = videoId;
+    }
+
+    public List<Step> getSteps() {
+        return steps;
+    }
+
+    public void setSteps(List<Step> steps) {
+        this.steps = steps;
     }
 }
