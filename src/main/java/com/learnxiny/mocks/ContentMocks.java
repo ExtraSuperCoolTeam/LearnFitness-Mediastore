@@ -1,8 +1,6 @@
 package com.learnxiny.mocks;
 
-import com.learnxiny.models.Content;
-import com.learnxiny.models.Step;
-import com.learnxiny.models.Week;
+import com.learnxiny.models.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -101,5 +99,36 @@ public class ContentMocks {
 
         return content;
 
+    }
+
+    public static List<Trainer> getTrainers() {
+
+        TrainerParam trainerParam = new TrainerParam("Lifting", "5", "6'1", "200 lbs" );
+        TrainerLocation trainerLocation1 = new TrainerLocation("37.77375569999999", "-122.4026382");
+        TrainerLocation trainerLocation2 = new TrainerLocation("37.77492840000001", "-122.4015604");
+        TrainerLocation trainerLocation3 = new TrainerLocation("37.769657", "-122.4070059");
+
+        final Trainer trainer1 = new Trainer("1", "The Rock",
+                "220, California st, San Francisco, CA 94111", "(415)955-1919",
+                "http://www.picpicx.com/wp-content/uploads/2014/09/790f3003f274a217a2ebc4cfdda3d4f4.png?63bea7",
+                trainerParam, trainerLocation1);
+
+        final Trainer trainer2 = new Trainer("2", "Mr IWillMakeYouFit",
+                "220, California st, San Francisco, CA 94111", "(415)955-1919",
+                "http://www.picpicx.com/wp-content/uploads/2014/09/790f3003f274a217a2ebc4cfdda3d4f4.png?63bea7",
+                trainerParam, trainerLocation2);
+
+        final Trainer trainer3 = new Trainer("3", "The Lifter",
+                "220, California st, San Francisco, CA 94111", "(415)955-1919",
+                "http://www.picpicx.com/wp-content/uploads/2014/09/790f3003f274a217a2ebc4cfdda3d4f4.png?63bea7",
+                trainerParam, trainerLocation3);
+
+        List<Trainer> trainers = new ArrayList<Trainer>() {{
+            add(trainer1);
+            add(trainer2);
+            add(trainer3);
+        }};
+
+        return trainers;
     }
 }

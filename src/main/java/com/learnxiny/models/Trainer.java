@@ -1,7 +1,5 @@
 package com.learnxiny.models;
 
-import java.util.Map;
-
 public class Trainer {
 
     String id;
@@ -9,17 +7,19 @@ public class Trainer {
     String address;
     String phone;
     String profileUrl;
-    Map<String, String> trainerParams;
+    TrainerParam trainerParams;
+    TrainerLocation location;
 
 
     public Trainer(String id, String name, String address, String phone, String profileUrl,
-                   Map<String, String> trainerParams) {
+                  TrainerParam trainerParams, TrainerLocation trainerLocation) {
         this.id = id;
         this.name = name;
         this.trainerParams = trainerParams;
         this.address = address;
         this.phone = phone;
         this.profileUrl = profileUrl;
+        this.location = trainerLocation;
 
     }
 
@@ -37,14 +37,6 @@ public class Trainer {
 
     public void setName(String name) {
         this.name = name;
-    }
-
-    public Map<String, String> getTrainerParams() {
-        return trainerParams;
-    }
-
-    public void setTrainerParams(Map<String, String> trainerParams) {
-        this.trainerParams = trainerParams;
     }
 
     public String getAddress() {
@@ -69,5 +61,21 @@ public class Trainer {
 
     public void setProfileUrl(String profileUrl) {
         this.profileUrl = profileUrl;
+    }
+
+    public TrainerParam getTrainerParams() {
+        return trainerParams;
+    }
+
+    public void setTrainerParams(TrainerParam trainerParams) {
+        this.trainerParams = trainerParams;
+    }
+
+    public TrainerLocation getLocation() {
+        return location;
+    }
+
+    public void setLocation(TrainerLocation location) {
+        this.location = location;
     }
 }
