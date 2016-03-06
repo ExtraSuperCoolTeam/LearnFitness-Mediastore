@@ -23,6 +23,7 @@ public class Week {
         this.shortDescription = shortDescription;
         this.longDescription = longDescription;
         this.steps = steps;
+        this.videoId = videoId;
     }
 
     public String getWeekTitle() {
