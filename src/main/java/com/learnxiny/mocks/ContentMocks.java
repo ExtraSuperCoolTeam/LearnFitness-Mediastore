@@ -110,17 +110,17 @@ public class ContentMocks {
 
         final Trainer trainer1 = new Trainer("1", "The Rock",
                 "220, California st, San Francisco, CA 94111", "(415)955-1919",
-                "http://www.picpicx.com/wp-content/uploads/2014/09/790f3003f274a217a2ebc4cfdda3d4f4.png?63bea7",
+                "http://i.dailymail.co.uk/i/pix/2015/05/10/02/2882448100000578-3075270-image-m-48_1431220845465.jpg",
                 trainerParam, trainerLocation1);
 
         final Trainer trainer2 = new Trainer("2", "Mr IWillMakeYouFit",
                 "220, California st, San Francisco, CA 94111", "(415)955-1919",
-                "http://www.picpicx.com/wp-content/uploads/2014/09/790f3003f274a217a2ebc4cfdda3d4f4.png?63bea7",
+                "http://i.dailymail.co.uk/i/pix/2015/05/10/02/2882448100000578-3075270-image-m-48_1431220845465.jpg",
                 trainerParam, trainerLocation2);
 
         final Trainer trainer3 = new Trainer("3", "The Lifter",
                 "220, California st, San Francisco, CA 94111", "(415)955-1919",
-                "http://www.picpicx.com/wp-content/uploads/2014/09/790f3003f274a217a2ebc4cfdda3d4f4.png?63bea7",
+                "http://i.dailymail.co.uk/i/pix/2015/05/10/02/2882448100000578-3075270-image-m-48_1431220845465.jpg",
                 trainerParam, trainerLocation3);
 
         List<Trainer> trainers = new ArrayList<Trainer>() {{
