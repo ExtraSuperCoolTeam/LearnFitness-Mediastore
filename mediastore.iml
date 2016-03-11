@@ -345,17 +345,6 @@
       </library>
     </orderEntry>
     <orderEntry type="module-library">
-      <library name="Gradle: org.springframework:spring-core:4.2.5.RELEASE">
-        <CLASSES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.5.RELEASE/251207b29f0f38f61e3495a2f7fb053cf1bfe8c/spring-core-4.2.5.RELEASE.jar!/" />
-        </CLASSES>
-        <JAVADOC />
-        <SOURCES>
-          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.5.RELEASE/86b9af475e134ba9f5c3843f33ff3ecd6cf95883/spring-core-4.2.5.RELEASE-sources.jar!/" />
-        </SOURCES>
-      </library>
-    </orderEntry>
-    <orderEntry type="module-library">
       <library name="Gradle: org.springframework.boot:spring-boot:1.4.0.M1">
         <CLASSES>
           <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot/1.4.0.M1/86a596dbebbd35255ec83fe74ad5a5c56f942104/spring-boot-1.4.0.M1.jar!/" />
@@ -385,6 +374,17 @@
         <JAVADOC />
         <SOURCES>
           <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-logging/1.4.0.M1/744ba9a36763e53d72500f112eafc864add26857/spring-boot-starter-logging-1.4.0.M1-sources.jar!/" />
+        </SOURCES>
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library name="Gradle: org.springframework:spring-core:4.2.5.RELEASE">
+        <CLASSES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.5.RELEASE/251207b29f0f38f61e3495a2f7fb053cf1bfe8c/spring-core-4.2.5.RELEASE.jar!/" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework/spring-core/4.2.5.RELEASE/86b9af475e134ba9f5c3843f33ff3ecd6cf95883/spring-core-4.2.5.RELEASE-sources.jar!/" />
         </SOURCES>
       </library>
     </orderEntry>
