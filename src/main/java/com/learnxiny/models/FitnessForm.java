@@ -11,18 +11,23 @@ public class FitnessForm {
     @Id
     String id;
     String trainerId;
-    String comment;
-    String videoUrl;
+    String message = "";
+    String feedback = "";
+    String videoId;
+    String weekTitle;
+    String weekNumber;
 
     public FitnessForm() {
 
     }
 
-    public FitnessForm(String id, String comment, String videoUrl, String trainerId ) {
-        this.id = id;
+    public FitnessForm(String trainerId, String message, String feedback, String videoId, String weekTitle, String weekNumber) {
         this.trainerId = trainerId;
-        this.comment = comment;
-        this.videoUrl = videoUrl;
+        this.message = message;
+        this.feedback = feedback;
+        this.videoId = videoId;
+        this.weekTitle = weekTitle;
+        this.weekNumber = weekNumber;
     }
 
     public String getId() {
@@ -41,19 +46,43 @@ public class FitnessForm {
         this.trainerId = trainerId;
     }
 
-    public String getComment() {
-        return comment;
+    public String getFeedback() {
+        return feedback;
     }
 
-    public void setComment(String comment) {
-        this.comment = comment;
+    public void setFeedback(String feedback) {
+        this.feedback = feedback;
     }
 
-    public String getVideoUrl() {
-        return videoUrl;
+    public String getVideoId() {
+        return videoId;
     }
 
-    public void setVideoUrl(String videoUrl) {
-        this.videoUrl = videoUrl;
+    public void setVideoId(String videoId) {
+        this.videoId = videoId;
+    }
+
+    public String getWeekNumber() {
+        return weekNumber;
+    }
+
+    public void setWeekNumber(String weekNumber) {
+        this.weekNumber = weekNumber;
+    }
+
+    public String getWeekTitle() {
+        return weekTitle;
+    }
+
+    public void setWeekTitle(String weekTitle) {
+        this.weekTitle = weekTitle;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }

@@ -7,6 +7,8 @@ import com.learnxiny.models.TrainerParam;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
+import java.util.UUID;
 
 /**
  * Created by spandhare on 3/10/16.
@@ -17,7 +19,11 @@ public class CheckMyFormMocks {
     static List<FitnessForm> fitnessForms = new ArrayList<FitnessForm>();
 
     public static FitnessForm createFitnessForm(FitnessForm fitnessForm) {
-        fitnessForm.setId(Long.toString(formId++));
+
+        UUID uuid = UUID.randomUUID();
+
+        fitnessForm.setId(uuid.toString());
+        fitnessForm.setFeedback("Keep core tight, breath in and breath out, focus!");
         fitnessForms.add(fitnessForm);
 
         return fitnessForm;
@@ -25,6 +31,7 @@ public class CheckMyFormMocks {
     }
 
     public static List<FitnessForm> getFitnessForms() {
+        fitnessForms.addAll(getFitnessFormsHardcoded());
         return fitnessForms;
     }
 
@@ -40,9 +47,20 @@ public class CheckMyFormMocks {
                 "http://i.dailymail.co.uk/i/pix/2015/05/10/02/2882448100000578-3075270-image-m-48_1431220845465.jpg",
                 trainerParam, trainerLocation1);
 
-        FitnessForm f = new FitnessForm("1", "https://www.youtube.com/watch?v=HeHbt6eAEb8", "hello","1");
+        FitnessForm f = new FitnessForm("1","hello", "hello again", "HeHbt6eAEb8", "squats", "1");
+        FitnessForm f2 = new FitnessForm("1","help on squats", "chest out", "HeHbt6eAEb8", "squats", "1");
+        FitnessForm f3 = new FitnessForm("1","Cant do push ups", "keep elbows in", "HeHbt6eAEb8", "squats", "1");
+        FitnessForm f4 = new FitnessForm("1","back hurting", "Do not arch", "HeHbt6eAEb8", "squats", "1");
+
         f.setId("1");
+        f2.setId("2");
+        f3.setId("3");
+        f4.setId("4");
+
         fitnessForms.add(f);
+        fitnessForms.add(f2);
+        fitnessForms.add(f3);
+        fitnessForms.add(f4);
 
         return fitnessForms;
     }

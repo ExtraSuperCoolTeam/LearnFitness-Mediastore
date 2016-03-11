@@ -19,6 +19,6 @@ public class CheckMyFormController {
 
     @RequestMapping(value = "/forms",  method = RequestMethod.GET)
     public List<FitnessForm> forms() {
-        return CheckMyFormMocks.getFitnessFormsHardcoded();
+        return CheckMyFormMocks.getFitnessForms();
     }
 }
