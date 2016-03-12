@@ -31,7 +31,10 @@ public class CheckMyFormMocks {
     }
 
     public static List<FitnessForm> getFitnessForms() {
-        fitnessForms.addAll(getFitnessFormsHardcoded());
+
+        if (fitnessForms.size() == 0) {
+            fitnessForms.addAll(getFitnessFormsHardcoded());
+        }
         return fitnessForms;
     }
 
