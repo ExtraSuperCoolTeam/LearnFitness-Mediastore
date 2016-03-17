@@ -99,10 +99,10 @@ public class ContentMocks {
 
     public static Content getContent() {
 
-        final Step step1 = new Step("1", "http://imgur.com/0j0MuhT\ng",
+        final Step step1 = new Step("1", "http://imgur.com/0j0MuhT.jpg",
                 "Start postion", "Keep core tight and take deep breath");
 
-        final Step step2 = new Step("2", "http://tonygentilcore.com/wp-content/uploads/2016/02/Nancy-Pushup-2.png",
+        final Step step2 = new Step("2", "http://imgur.com/z0RwMnt.jpg  ",
                 "Go down", "Go down keeping correct form");
 
         final Step step3 = new Step("3", "http://tonygentilcore.com/wp-content/uploads/2016/02/Nancy-Pushup-head-back.png",
@@ -115,13 +115,13 @@ public class ContentMocks {
         }};
 
         //Week 1
-        final Step week1Step1 = new Step("1", "http://imgur.com/0j0MuhT",
+        final Step week1Step1 = new Step("1", "http://imgur.com/0j0MuhT.jpg",
                 "Start postion", "Push single cable from chest level, forward and slightly down");
 
-        final Step week1Step2 = new Step("2", "http://imgur.com/z0RwMnt",
+        final Step week1Step2 = new Step("2", "http://imgur.com/z0RwMnt.jpg",
                 "Go down", "Simultaneously descend into partial split squat");
 
-        final Step week1Step3 = new Step("3", "http://imgur.com/Q35G2OK",
+        final Step week1Step3 = new Step("3", "http://imgur.com/Q35G2OK.jpg",
                 "Head back", "Maintain neutral spine whilst allowing trunk rotation ");
 
         List<Step> week1Steps = new ArrayList<Step>(){{
@@ -139,14 +139,14 @@ public class ContentMocks {
 
 
         //Week 2
-        final Step week2Step1 = new Step("1", "http://imgur.com/0j0MuhT",
-                "Start postion", "Push single cable from chest level, forward and slightly down");
+        final Step week2Step1 = new Step("1", "http://imgur.com/lOkqVSg.jpg",
+                "Start postion", "Pull mid-cable to alternate sides");
 
-        final Step week2Step2 = new Step("2", "http://imgur.com/z0RwMnt",
-                "Go down", "Simultaneously descend into partial split squat");
+        final Step week2Step2 = new Step("2", "http://imgur.com/JWVEiXB.jpg",
+                "Go down", "Simultaneously take a large step back - knee travels over 2nd toe");
 
-        final Step week2Step3 = new Step("3", "http://imgur.com/Q35G2OK",
-                "Head back", "Maintain neutral spine whilst allowing trunk rotation ");
+        final Step week2Step3 = new Step("3", "http://imgur.com/jWQjvDD.jpg",
+                "Head back", " Alternate legs ");
 
         List<Step> week2Steps = new ArrayList<Step>(){{
             add(week2Step1);
@@ -164,13 +164,13 @@ public class ContentMocks {
 
         //Week 3
 
-        final Step week3Step1 = new Step("1", "http://imgur.com/akVaOxt",
+        final Step week3Step1 = new Step("1", "http://imgur.com/akVaOxt.jpg",
                 "Start postion", "Move each cable through a transverse arc with a reciprocal action");
 
-        final Step week3Step2 = new Step("2", "http://imgur.com/org0qG9",
+        final Step week3Step2 = new Step("2", "http://imgur.com/org0qG9.jpg",
                 "Go down", "Simultaneously descend into weight-shifting squat in same direction");
 
-        final Step week3Step3 = new Step("3", "http://imgur.com/org0qG9",
+        final Step week3Step3 = new Step("3", "http://imgur.com/org0qG9.jpg",
                 "Head back", "Feel gentle stretch in inner thigh of trailing leg");
 
         List<Step> week3Steps = new ArrayList<Step>(){{
@@ -188,13 +188,13 @@ public class ContentMocks {
 
         //week 4
 
-        final Step week4Step1 = new Step("1", "http://imgur.com/org0qG9",
+        final Step week4Step1 = new Step("1", "http://imgur.com/org0qG9.jpg",
                 "Start postion", "Begin with cables high and central - with arms crossed over");
 
-        final Step week4Step2 = new Step("2", "http://imgur.com/qwkwwNt",
+        final Step week4Step2 = new Step("2", "http://imgur.com/qwkwwNt.jpg",
                 "Go down", "Arc cables back and down to low and wide");
 
-        final Step week4Step3 = new Step("3", "http://imgur.com/W7rmtxd",
+        final Step week4Step3 = new Step("3", "http://imgur.com/W7rmtxd.jpg",
                 "Head back", "Release slowly with chest high whilst descending back into squat ");
 
         List<Step> week4Steps = new ArrayList<Step>(){{
@@ -214,13 +214,13 @@ public class ContentMocks {
         //Week 5
 
 
-        final Step week5Step1 = new Step("1", "http://imgur.com/W7rmtxd",
+        final Step week5Step1 = new Step("1", "http://imgur.com/W7rmtxd.jpg",
                 "Start postion", "Sit back into the squat and maintain neutral spine");
 
-        final Step week5Step2 = new Step("2", "http://imgur.com/v9dract",
+        final Step week5Step2 = new Step("2", "http://imgur.com/v9dract.jpg",
                 "Go down", "Drop into 1/4 squat before extending hips and knees");
 
-        final Step week5Step3 = new Step("3", "http://imgur.com/KoYTETw",
+        final Step week5Step3 = new Step("3", "http://imgur.com/KoYTETw.jpg",
                 "Head back", "Come up onto toes whilst pushing dubmbbells fully overhead");
 
         List<Step> week5Steps = new ArrayList<Step>(){{
