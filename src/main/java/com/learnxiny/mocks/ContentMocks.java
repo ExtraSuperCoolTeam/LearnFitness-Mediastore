@@ -145,7 +145,7 @@ public class ContentMocks {
         final Step week2Step2 = new Step("2", "http://imgur.com/z0RwMnt",
                 "Go down", "Simultaneously descend into partial split squat");
 
-        final Step week2Step3 = new Step("3", " http://imgur.com/Q35G2OK",
+        final Step week2Step3 = new Step("3", "http://imgur.com/Q35G2OK",
                 "Head back", "Maintain neutral spine whilst allowing trunk rotation ");
 
         List<Step> week2Steps = new ArrayList<Step>(){{
