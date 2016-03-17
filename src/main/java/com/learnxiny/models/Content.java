@@ -1,8 +1,13 @@
 package com.learnxiny.models;
 
+import org.springframework.data.annotation.Id;
+
 import java.util.List;
 
 public class Content {
+    @Id
+    
+    private String id;
     String title;
     String imageUrl;
     String numberOfWeeks;
