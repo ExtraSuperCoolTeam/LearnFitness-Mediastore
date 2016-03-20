@@ -104,8 +104,8 @@ public class MyFormMessagesController {
         Collections.sort(trainerReplies, new Comparator<TrainerReply>() {
             @Override
             public int compare(TrainerReply o1, TrainerReply o2) {
-                return (int) (Long.parseLong(o1.getFormMessageReply().getTimeStamp()) -
-                        Long.parseLong(o2.getFormMessageReply().getTimeStamp()));
+                return (int) (Long.parseLong(o2.getFormMessageReply().getTimeStamp()) -
+                        Long.parseLong(o1.getFormMessageReply().getTimeStamp()));
             }
         });
 
