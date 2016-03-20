@@ -5,48 +5,48 @@ package com.learnxiny.models;
  */
 public class TrainerParam {
 
-    private String Speciality;
-    private String YrsOfTraining;
-    private String Height;
-    private String Weight;
+    private String speciality;
+    private String yrsOfTraining;
+    private String height;
+    private String weight;
 
 
     public TrainerParam(String speciality, String yrsOfTraining, String height, String weight) {
-        Speciality = speciality;
-        YrsOfTraining = yrsOfTraining;
-        Height = height;
-        Weight = weight;
+        this.speciality = speciality;
+        this.yrsOfTraining = yrsOfTraining;
+        this.height = height;
+        this.weight = weight;
     }
 
     public String getSpeciality() {
-        return Speciality;
+        return speciality;
     }
 
     public void setSpeciality(String speciality) {
-        Speciality = speciality;
+        this.speciality = speciality;
     }
 
     public String getYrsOfTraining() {
-        return YrsOfTraining;
+        return yrsOfTraining;
     }
 
     public void setYrsOfTraining(String yrsOfTraining) {
-        YrsOfTraining = yrsOfTraining;
+        this.yrsOfTraining = yrsOfTraining;
     }
 
     public String getHeight() {
-        return Height;
+        return height;
     }
 
     public void setHeight(String height) {
-        Height = height;
+        this.height = height;
     }
 
     public String getWeight() {
-        return Weight;
+        return weight;
     }
 
     public void setWeight(String weight) {
-        Weight = weight;
+        this.weight = weight;
     }
 }

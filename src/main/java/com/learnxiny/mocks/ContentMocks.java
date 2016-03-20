@@ -277,62 +277,62 @@ public class ContentMocks {
 
     }
 
-    public static List<Trainer> getTrainers() {
-
-//        TrainerParam trainerParam = new TrainerParam("Lifting", "5", "6'1", "200 lbs" );
-//        TrainerLocation trainerLocation1 = new TrainerLocation("37.77375569999999", "-122.4026382");
-//        TrainerLocation trainerLocation2 = new TrainerLocation("37.77492840000001", "-122.4015604");
-//        TrainerLocation trainerLocation3 = new TrainerLocation("37.769657", "-122.4070059");
+//    public static List<Trainer> getTrainers() {
+//
+////        TrainerParam trainerParam = new TrainerParam("Lifting", "5", "6'1", "200 lbs" );
+////        TrainerLocation trainerLocation1 = new TrainerLocation("37.77375569999999", "-122.4026382");
+////        TrainerLocation trainerLocation2 = new TrainerLocation("37.77492840000001", "-122.4015604");
+////        TrainerLocation trainerLocation3 = new TrainerLocation("37.769657", "-122.4070059");
+////
+////        final Trainer trainer1 = new Trainer("1", "The Rock",
+////                "220, California st, San Francisco, CA 94111", "(415)955-1919",
+////                "http://i.dailymail.co.uk/i/pix/2015/05/10/02/2882448100000578-3075270-image-m-48_1431220845465.jpg",
+////                trainerParam, trainerLocation1);
+////
+////        final Trainer trainer2 = new Trainer("2", "Mr IWillMakeYouFit",
+////                "220, California st, San Francisco, CA 94111", "(415)955-1919",
+////                "http://i.dailymail.co.uk/i/pix/2015/05/10/02/2882448100000578-3075270-image-m-48_1431220845465.jpg",
+////                trainerParam, trainerLocation2);
+////
+////        final Trainer trainer3 = new Trainer("3", "The Lifter",
+////                "220, California st, San Francisco, CA 94111", "(415)955-1919",
+////                "http://i.dailymail.co.uk/i/pix/2015/05/10/02/2882448100000578-3075270-image-m-48_1431220845465.jpg",
+////                trainerParam, trainerLocation3);
+////
+////        List<Trainer> trainers = new ArrayList<Trainer>() {{
+////            add(trainer1);
+////            add(trainer2);
+////            add(trainer3);
+////        }};
+//
+//
+//        TrainerParam trainerParam1 = new TrainerParam("Lifting", "5", "6'1", "200 lbs" );
+//        TrainerParam trainerParam2 = new TrainerParam("Cardio", "5", "6'1", "200 lbs" );
+//        TrainerParam trainerParam3 = new TrainerParam("Cross Fit", "5", "6'1", "200 lbs" );
+//        TrainerLocation trainerLocation1 = new TrainerLocation("37.773780", "-122.402717");
+//        TrainerLocation trainerLocation2 = new TrainerLocation("37.769668", "-122.406936");
+//        TrainerLocation trainerLocation3 = new TrainerLocation("37.774934", "-122.401561");
 //
 //        final Trainer trainer1 = new Trainer("1", "The Rock",
-//                "220, California st, San Francisco, CA 94111", "(415)955-1919",
-//                "http://i.dailymail.co.uk/i/pix/2015/05/10/02/2882448100000578-3075270-image-m-48_1431220845465.jpg",
-//                trainerParam, trainerLocation1);
+//                "766 Brannan Street. San Francisco, CA 94103", "(415)863-3935",
+//                "http://starschanges.com/wp-content/uploads/2015/06/The-Rock-dwayne-the-rock-johnson-33694572-500-562.jpg",
+//                trainerParam1, trainerLocation1);
 //
-//        final Trainer trainer2 = new Trainer("2", "Mr IWillMakeYouFit",
-//                "220, California st, San Francisco, CA 94111", "(415)955-1919",
-//                "http://i.dailymail.co.uk/i/pix/2015/05/10/02/2882448100000578-3075270-image-m-48_1431220845465.jpg",
-//                trainerParam, trainerLocation2);
+//        final Trainer trainer2 = new Trainer("2", " Arnold Schwarzenegger",
+//                "1001 Brannan Street. San Francisco, CA 94103", "(415)348-6377",
+//                "http://cms.bbcomcdn.com/fun/images/2014/arnold-schwarzeneggers-8-best-training-principles-musclepharm-arnold-series-graphic-1.jpg",
+//                trainerParam2, trainerLocation2);
 //
-//        final Trainer trainer3 = new Trainer("3", "The Lifter",
-//                "220, California st, San Francisco, CA 94111", "(415)955-1919",
-//                "http://i.dailymail.co.uk/i/pix/2015/05/10/02/2882448100000578-3075270-image-m-48_1431220845465.jpg",
-//                trainerParam, trainerLocation3);
+//        final Trainer trainer3 = new Trainer("3", "Bruce Wayne",
+//                "586 6th Street. San Francisco, CA 94103", "(415)483-2926",
+//                "http://images6.fanpop.com/image/photos/32400000/Bruce-Wayne-bruce-wayne-32411252-967-1450.jpg",
+//                trainerParam3, trainerLocation3);
 //
 //        List<Trainer> trainers = new ArrayList<Trainer>() {{
 //            add(trainer1);
 //            add(trainer2);
 //            add(trainer3);
 //        }};
-
-
-        TrainerParam trainerParam1 = new TrainerParam("Lifting", "5", "6'1", "200 lbs" );
-        TrainerParam trainerParam2 = new TrainerParam("Cardio", "5", "6'1", "200 lbs" );
-        TrainerParam trainerParam3 = new TrainerParam("Cross Fit", "5", "6'1", "200 lbs" );
-        TrainerLocation trainerLocation1 = new TrainerLocation("37.773780", "-122.402717");
-        TrainerLocation trainerLocation2 = new TrainerLocation("37.769668", "-122.406936");
-        TrainerLocation trainerLocation3 = new TrainerLocation("37.774934", "-122.401561");
-
-        final Trainer trainer1 = new Trainer("1", "The Rock",
-                "766 Brannan Street. San Francisco, CA 94103", "(415)863-3935",
-                "http://starschanges.com/wp-content/uploads/2015/06/The-Rock-dwayne-the-rock-johnson-33694572-500-562.jpg",
-                trainerParam1, trainerLocation1);
-
-        final Trainer trainer2 = new Trainer("2", " Arnold Schwarzenegger",
-                "1001 Brannan Street. San Francisco, CA 94103", "(415)348-6377",
-                "http://cms.bbcomcdn.com/fun/images/2014/arnold-schwarzeneggers-8-best-training-principles-musclepharm-arnold-series-graphic-1.jpg",
-                trainerParam2, trainerLocation2);
-
-        final Trainer trainer3 = new Trainer("3", "Bruce Wayne",
-                "586 6th Street. San Francisco, CA 94103", "(415)483-2926",
-                "http://images6.fanpop.com/image/photos/32400000/Bruce-Wayne-bruce-wayne-32411252-967-1450.jpg",
-                trainerParam3, trainerLocation3);
-
-        List<Trainer> trainers = new ArrayList<Trainer>() {{
-            add(trainer1);
-            add(trainer2);
-            add(trainer3);
-        }};
-        return trainers;
-    }
+//        return trainers;
+//    }
 }

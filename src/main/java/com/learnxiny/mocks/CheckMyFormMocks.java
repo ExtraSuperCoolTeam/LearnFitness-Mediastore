@@ -45,7 +45,7 @@ public class CheckMyFormMocks {
         TrainerLocation trainerLocation1 = new TrainerLocation("37.77375569999999", "-122.4026382");
 
 
-        final Trainer trainer1 = new Trainer("1", "The Rock",
+        final Trainer trainer1 = new Trainer("The Rock",
                 "220, California st, San Francisco, CA 94111", "(415)955-1919",
                 "http://i.dailymail.co.uk/i/pix/2015/05/10/02/2882448100000578-3075270-image-m-48_1431220845465.jpg",
                 trainerParam, trainerLocation1);

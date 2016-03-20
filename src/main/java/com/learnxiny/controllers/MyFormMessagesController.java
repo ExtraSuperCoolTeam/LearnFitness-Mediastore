@@ -3,19 +3,19 @@ package com.learnxiny.controllers;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.learnxiny.mocks.CheckMyFormMocks;
-import com.learnxiny.models.Counter;
-import com.learnxiny.models.FitnessForm;
-import com.learnxiny.models.FormMessage;
+import com.learnxiny.models.*;
 import com.learnxiny.mongorepository.CounterRepository;
+import com.learnxiny.mongorepository.FormMessageReplyRepository;
 import com.learnxiny.mongorepository.FormMessageRepository;
+import com.learnxiny.mongorepository.TrainerInfoRepository;
 import com.learnxiny.service.CounterService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.util.StringUtils;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 /**
@@ -27,11 +27,13 @@ public class MyFormMessagesController {
     private FormMessageRepository formMessageRepository;
 
     @Autowired
-    private CounterRepository counterRepository;
+    private FormMessageReplyRepository formMessageReplyRepository;
+
+    @Autowired
+    TrainerInfoRepository trainerInfoRepository;
 
     @Autowired
     private CounterService counterService;
-
 
     @RequestMapping(value = "/messages",  method = RequestMethod.POST)
     public FormMessage postFormMessage(@RequestBody String jsonString) {
@@ -55,9 +57,64 @@ public class MyFormMessagesController {
         return formMessageRepository.findAll();
     }
 
-    @RequestMapping(value = "/messages/refresh",  method = RequestMethod.POST)
+    @RequestMapping(value = "/messages/reset",  method = RequestMethod.POST)
     public void refreshFormMessage() {
         formMessageRepository.deleteAll();
         counterService.reset("form_messages");
+    }
+
+    @RequestMapping(value = "/messages/{messageId}/reply",  method = RequestMethod.POST)
+    public FormMessageReply postFormMessageReply(@PathVariable(value="messageId") String messageId,
+                                                 @RequestBody String jsonString) {
+        Gson gson = new GsonBuilder().serializeNulls().create();
+        FormMessageReply formMessageReply =  gson.fromJson(jsonString, FormMessageReply.class);
+
+        if (formMessageReply != null) {
+            formMessageReply.setId(Long.toString(counterService.getNextSequence("form_message_replies")));
+
+            if (StringUtils.isEmpty(formMessageReply.getTimeStamp())) {
+                formMessageReply.setTimeStamp(Long.toString(System.currentTimeMillis()));
+            }
+
+            //TODO check of existence of message id
+            formMessageReply.setMessageId(messageId);
+        }
+
+        formMessageReplyRepository.save(formMessageReply);
+        return formMessageReply;
+    }
+
+    @RequestMapping(value = "/messages/{messageId}/replies",  method = RequestMethod.GET)
+    public List<TrainerReply> replies(@PathVariable(value="messageId") String messageId) {
+
+        List<FormMessageReply> formMessageReplies = formMessageReplyRepository.findAllByMessageId(messageId);
+
+        List<TrainerReply> trainerReplies = new ArrayList<TrainerReply>();
+
+        for (FormMessageReply formMessageReply: formMessageReplies) {
+            TrainerReply trainerReply = new TrainerReply();
+
+            trainerReply.setFormMessageReply(formMessageReply);
+            Trainer trainer = trainerInfoRepository.findOne(formMessageReply.getTrainerId());
+            trainerReply.setTrainer(trainer);
+
+            trainerReplies.add(trainerReply);
+        }
+
+        Collections.sort(trainerReplies, new Comparator<TrainerReply>() {
+            @Override
+            public int compare(TrainerReply o1, TrainerReply o2) {
+                return (int) (Long.parseLong(o1.getFormMessageReply().getTimeStamp()) -
+                        Long.parseLong(o2.getFormMessageReply().getTimeStamp()));
+            }
+        });
+
+        return trainerReplies;
+    }
+
+    @RequestMapping(value = "/replies/reset",  method = RequestMethod.POST)
+    public void resetFormMessageReplies() {
+        formMessageReplyRepository.deleteAll();
+        counterService.reset("form_message_replies");
     }
 }

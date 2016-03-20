@@ -1,5 +1,8 @@
 package com.learnxiny.models;
 
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "trainers")
 public class Trainer {
 
     String id;
@@ -10,16 +13,14 @@ public class Trainer {
     TrainerParam trainerParams;
     TrainerLocation location;
 
-
-    public Trainer(String id, String name, String address, String phone, String profileUrl,
-                  TrainerParam trainerParams, TrainerLocation trainerLocation) {
-        this.id = id;
+    public Trainer(String name, String address, String phone, String profileUrl,
+                  TrainerParam trainerParams, TrainerLocation location) {
         this.name = name;
-        this.trainerParams = trainerParams;
         this.address = address;
         this.phone = phone;
         this.profileUrl = profileUrl;
-        this.location = trainerLocation;
+        this.trainerParams = trainerParams;
+        this.location = location;
 
     }
 
