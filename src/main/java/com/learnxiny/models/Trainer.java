@@ -10,18 +10,19 @@ public class Trainer {
     String address;
     String phone;
     String profileUrl;
+    String handle;
     TrainerParam trainerParams;
     TrainerLocation location;
 
-    public Trainer(String name, String address, String phone, String profileUrl,
+    public Trainer(String name, String address, String phone, String profileUrl, String handle,
                   TrainerParam trainerParams, TrainerLocation location) {
         this.name = name;
         this.address = address;
         this.phone = phone;
         this.profileUrl = profileUrl;
+        this.handle = handle;
         this.trainerParams = trainerParams;
         this.location = location;
-
     }
 
     public String getId() {
@@ -78,5 +79,13 @@ public class Trainer {
 
     public void setLocation(TrainerLocation location) {
         this.location = location;
+    }
+
+    public String getHandle() {
+        return handle;
+    }
+
+    public void setHandle(String handle) {
+        this.handle = handle;
     }
 }
