@@ -7,15 +7,15 @@ public class Trainer {
 
     String id;
     String name;
-    String address;
     String phone;
     String profileUrl;
     String handle;
     TrainerParam trainerParams;
+    TrainerAddress address;
     TrainerLocation location;
 
-    public Trainer(String name, String address, String phone, String profileUrl, String handle,
-                  TrainerParam trainerParams, TrainerLocation location) {
+    public Trainer(String name, String phone, String profileUrl, String handle,
+                  TrainerParam trainerParams, TrainerAddress address, TrainerLocation location) {
         this.name = name;
         this.address = address;
         this.phone = phone;
@@ -41,11 +41,11 @@ public class Trainer {
         this.name = name;
     }
 
-    public String getAddress() {
+    public TrainerAddress getAddress() {
         return address;
     }
 
-    public void setAddress(String address) {
+    public void setAddress(TrainerAddress address) {
         this.address = address;
     }
 
