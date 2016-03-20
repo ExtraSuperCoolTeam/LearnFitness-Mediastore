@@ -99,14 +99,14 @@ public class ContentMocks {
 
     public static Content getContent() {
 
-        final Step step1 = new Step("1", "http://imgur.com/0j0MuhT.jpg",
-                "Start postion", "Keep core tight and take deep breath");
+        final Step step1 = new Step("1", "http://i.imgur.com/W0i54vv.jpg",
+                "Virabhadrasana 1", "Lift through the heart and hip drawing forward");
 
-        final Step step2 = new Step("2", "http://imgur.com/z0RwMnt.jpg  ",
-                "Go down", "Go down keeping correct form");
+        final Step step2 = new Step("2", "http://i.imgur.com/CzfWuMy.jpg",
+                "Tadasana", "Raise your arms parallel to the floor and reach them actively out to the sides, shoulder blades wide, palms down");
 
-        final Step step3 = new Step("3", "http://tonygentilcore.com/wp-content/uploads/2016/02/Nancy-Pushup-head-back.png",
-                "Head back", "Keep tight");
+        final Step step3 = new Step("3", "http://i.imgur.com/2jIoBZi.jpg",
+                "Vinyasa", "From Mountain pose, step the right foot a foot lengths forward and shift all of your weight onto this leg");
 
         List<Step> steps = new ArrayList<Step>(){{
             add(step1);
@@ -130,12 +130,12 @@ public class ContentMocks {
             add(week1Step3);
         }};
 
-        final Week week1 = new Week("HIIT Cardio and Body Strength", "1",
-                "http://gumbofitness.com/wp-content/uploads/2014/11/header-photo1.jpg",
+        final Week week1 = new Week("HIIT calorie burning cardio", "1",
+                "http://www.totalprosports.com/wp-content/uploads/2012/11/14-allyson-felix-female-athletes-you-should-follow-on-twitter.jpg",
                 "https://youtu.be/Cn8Elmw16ZU", "Cn8Elmw16ZU", "" +
                 "Train like an Athlete Interval Training - At Home Cardio and Toning Boot Camp","" +
                 "Part of true fitness is not only that you have good cardiovascular endurance and that you are strong but also that your body is capable of doing many different motions with ease and is capable of moving from one motion to another with only a small learning curve. Being truly fit is knowing what your body is capable of before you even attempt it and having trained your body to the point where it can become accustomed to a new exercise/motion in a very short amount of time.",
-                week1Steps);
+                steps);
 
 
         //Week 2
@@ -155,12 +155,12 @@ public class ContentMocks {
         }};
 
 
-        final Week week2 = new Week("Calorie burning cardio and upper body strength", "2",
-                "http://gumbofitness.com/wp-content/uploads/2014/11/header-photo1.jpg",
+        final Week week2 = new Week("Upper body strength and arm building", "2",
+                "http://cdn2.omidoo.com/sites/default/files/imagecache/full_width/images/bydate/201510/dresdinbodybuilderbw.png",
                 "https://youtu.be/E_J6CntJXyQ", "E_J6CntJXyQ","" +
                 "Train like an Athlete Interval Training - At Home Cardio and Toning Boot Camp","" +
                 "Part of true fitness is not only that you have good cardiovascular endurance and that you are strong but also that your body is capable of doing many different motions with ease and is capable of moving from one motion to another with only a small learning curve. Being truly fit is knowing what your body is capable of before you even attempt it and having trained your body to the point where it can become accustomed to a new exercise/motion in a very short amount of time.",
-                week2Steps);
+                steps);
 
         //Week 3
 
@@ -179,12 +179,12 @@ public class ContentMocks {
             add(week3Step3);
         }};
 
-        final Week week3 = new Week(" HIIT, Core, and Pilates Burnout", "3",
-                "http://gumbofitness.com/wp-content/uploads/2014/11/header-photo1.jpg",
+        final Week week3 = new Week("Yoga and warrior poses", "3",
+                "http://www.capwellnesscenter.com/wp-content/uploads/2015/09/yoga.jpg",
                 "https://youtu.be/M2pfvVdk6N0", "M2pfvVdk6N0","" +
                 "Train like an Athlete Interval Training - At Home Cardio and Toning Boot Camp","" +
                 "Part of true fitness is not only that you have good cardiovascular endurance and that you are strong but also that your body is capable of doing many different motions with ease and is capable of moving from one motion to another with only a small learning curve. Being truly fit is knowing what your body is capable of before you even attempt it and having trained your body to the point where it can become accustomed to a new exercise/motion in a very short amount of time.",
-                week3Steps);
+                steps);
 
         //week 4
 
@@ -204,12 +204,12 @@ public class ContentMocks {
         }};
 
 
-        final Week week4 = new Week("Cardio, Upper Body, and Yoga", "4",
-                "http://gumbofitness.com/wp-content/uploads/2014/11/header-photo1.jpg",
+        final Week week4 = new Week("Overall strength building and muscle tonning", "4",
+                "http://cdn-maf2.heartyhosting.com/sites/muscleandfitness.com/files/styles/full_node_image_1090x614/public/media/jump-rope-2-benefits-promo.jpg",
                 "https://youtu.be/gDc97d3Fmfc", "gDc97d3Fmfc","" +
                 "Train like an Athlete Interval Training - At Home Cardio and Toning Boot Camp","" +
                 "Part of true fitness is not only that you have good cardiovascular endurance and that you are strong but also that your body is capable of doing many different motions with ease and is capable of moving from one motion to another with only a small learning curve. Being truly fit is knowing what your body is capable of before you even attempt it and having trained your body to the point where it can become accustomed to a new exercise/motion in a very short amount of time.",
-                week4Steps);
+                steps);
 
         //Week 5
 
@@ -230,12 +230,12 @@ public class ContentMocks {
         }};
 
 
-        final Week week5 = new Week("HIIT and Lower Body", "5",
-                "http://gumbofitness.com/wp-content/uploads/2014/11/header-photo1.jpg",
+        final Week week5 = new Week("Pilates", "5",
+                "http://magnifazine.com/wp-content/uploads/2013/07/Health-Fitness-Pilates.jpg",
                 "https://youtu.be/tMB_ehaXtbI", "tMB_ehaXtbI","" +
                 "Train like an Athlete Interval Training - At Home Cardio and Toning Boot Camp","" +
                 "Part of true fitness is not only that you have good cardiovascular endurance and that you are strong but also that your body is capable of doing many different motions with ease and is capable of moving from one motion to another with only a small learning curve. Being truly fit is knowing what your body is capable of before you even attempt it and having trained your body to the point where it can become accustomed to a new exercise/motion in a very short amount of time.",
-                week5Steps);
+                steps);
 
 //        final Week week6 = new Week("Squat jacks 6", "6",
 //                "http://gumbofitness.com/wp-content/uploads/2014/11/header-photo1.jpg",
