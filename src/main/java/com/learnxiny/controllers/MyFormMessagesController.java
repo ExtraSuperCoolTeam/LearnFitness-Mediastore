@@ -54,7 +54,29 @@ public class MyFormMessagesController {
 
     @RequestMapping(value = "/messages",  method = RequestMethod.GET)
     public List<FormMessage> messages() {
-        return formMessageRepository.findAll();
+
+        List<FormMessage> formMessages = formMessageRepository.findAll();
+
+        for(FormMessage formMessage: formMessages) {
+
+            List<FormMessageReply> formMessageReplies =
+                    formMessageReplyRepository.findAllByMessageId(formMessage.getId());
+
+            if (formMessageReplies == null || formMessageReplies.size() == 0) {
+                formMessage.setNumberOfReplies("0");
+            } else {
+                formMessage.setNumberOfReplies(Integer.toString(formMessageReplies.size()));
+            }
+        }
+        Collections.sort(formMessages, new Comparator<FormMessage>() {
+            @Override
+            public int compare(FormMessage o1, FormMessage o2) {
+                return (int) (Long.parseLong(o2.getTimeStamp()) -
+                        Long.parseLong(o1.getTimeStamp()));
+            }
+        });
+
+        return formMessages;
     }
 
     @RequestMapping(value = "/messages/reset",  method = RequestMethod.POST)

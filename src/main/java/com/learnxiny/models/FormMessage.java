@@ -15,6 +15,7 @@ public class FormMessage {
     String weekTitle;
     String weekNumber;
     String timeStamp;
+    String numberOfReplies;
 
     public FormMessage(String message, String videoId, String weekTitle, String weekNumber, String timeStamp) {
         this.message = message;
@@ -70,5 +71,13 @@ public class FormMessage {
 
     public void setTimeStamp(String timeStamp) {
         this.timeStamp = timeStamp;
+    }
+
+    public String getNumberOfReplies() {
+        return numberOfReplies;
+    }
+
+    public void setNumberOfReplies(String numberOfReplies) {
+        this.numberOfReplies = numberOfReplies;
     }
 }
